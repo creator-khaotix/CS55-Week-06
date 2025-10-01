@@ -1,0 +1,85 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #000000;
+  color: #00ff00;
+  min-height: 100vh;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+a {
+  color: #00ff41;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ff88;
+  text-decoration: underline;
+  text-shadow: 0 0 5px #00ff41;
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Matrix-style enhancements */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure all text elements inherit the green color */
+h1, h2, h3, h4, h5, h6, p, div, span, li, ul, ol {
+  color: #00ff00;
+}
+
+/* Style for any boxes or containers */
+div, section, article, main, aside, header, footer {
+  background-color: rgba(0, 255, 0, 0.05);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Ensure buttons and interactive elements are visible */
+button, input, textarea, select {
+  background-color: #001100;
+  color: #00ff00;
+  border: 1px solid #00ff41;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+button:hover, input:hover, textarea:hover, select:hover {
+  background-color: #002200;
+  border-color: #00ff88;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+/* Style for code blocks if any */
+code, pre {
+  background-color: #001100;
+  color: #00ff41;
+  border: 1px solid #00ff00;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
