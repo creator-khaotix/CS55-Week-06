@@ -14,12 +14,12 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 
 // Import the getSortedPostsData function to fetch blog post data
-import { getSortedPostsData } from '../lib/posts-json';
+import { getSortedPostsData } from '../lib/posts-firebase';
  
 // Static generation function that runs at build time to fetch data for this page
 export async function getStaticProps() {
   // Call the function to get all blog posts sorted by date
-  const allPostsData = getSortedPostsData();
+  const allPostsData = await getSortedPostsData();
   
   // Return the data as props to be passed to the component
   return {

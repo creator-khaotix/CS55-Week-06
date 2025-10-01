@@ -11,7 +11,7 @@ import Head from 'next/head';
 import Layout from '../../components/layout';
 
 // Import functions to get all post IDs and individual post data
-import { getAllPostIds, getPostData } from '../../lib/posts-json';
+import { getAllPostIds, getPostData } from '../../lib/posts-firebase';
  
 // Static generation function that runs at build time to fetch data for individual posts
 export async function getStaticProps({ params }) {
@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
 // Static generation function that defines all possible paths for this dynamic route
 export async function getStaticPaths() {
   // Get all available post IDs from the markdown files
-  const paths = getAllPostIds();
+  const paths = await getAllPostIds();
   
   // Return the paths and fallback configuration
   return {
